@@ -7,11 +7,11 @@ spec:
   project: default
 
   source:
-    repoURL: https://gitlab.com/nanuchi/argocd-app-config.git
-    targetRevision: HEAD
-    path: dev
+    repoURL: https://github.com/blitzkrieg0000/argocd-demo.git
+    targetRevision: HEAD                                        # lastcommit
+    path: dev                                                   # sync or tracking path/directory
   destination: 
-    server: https://kubernetes.default.svc
+    server: https://kubernetes.default.svc                      #Zaten kubernetes içerisindeyiz dns den çözümleyecek
     namespace: myapp
 
   syncPolicy:
