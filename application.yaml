@@ -10,8 +10,9 @@ spec:
     repoURL: https://github.com/blitzkrieg0000/argocd-demo.git
     targetRevision: HEAD                                        # lastcommit
     path: dev                                                   # sync or tracking path/directory
+  
   destination: 
-    server: https://kubernetes.default.svc                      #Zaten kubernetes içerisindeyiz dns den çözümleyecek
+    server: https://kubernetes.default.svc                      # Zaten kubernetes içerisindeyiz dns den çözümleyecek
     namespace: myapp
 
   syncPolicy:
